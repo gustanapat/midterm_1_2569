@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#183b33">
+  <meta name="description" content="Amazing Thailand: 1 ภาค 1 จังหวัด ไม่ไปไม่รู้ — สำรวจ 6 จังหวัดน่าเที่ยวทั่วไทย พร้อมไอเดียเที่ยว กิน และพัก">
+  <title>Amazing Thailand — 1 ภาค 1 จังหวัด ไม่ไปไม่รู้</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="เมนูหลัก">
+      <a class="brand" href="#top" aria-label="Amazing Thailand กลับสู่ด้านบน">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span class="brand-words"><strong>AMAZING</strong><small>THAILAND / 2569</small></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#discover">จุดหมาย</a>
+        <a href="#journey">คู่มือเดินทาง</a>
+        <a href="#about">เกี่ยวกับโปรเจกต์</a>
+      </div>
+      <a class="nav-cta" href="#discover">ออกเดินทาง <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" id="menu-button" aria-controls="nav-links" aria-expanded="false" aria-label="เปิดเมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="ภาพถ่ายทะเลหมอกยามเช้าที่ดอยเสมอดาว จังหวัดน่าน"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content page-wrap">
+        <div class="hero-kicker"><span class="kicker-line"></span> THE JOURNEY BEGINS HERE <span class="kicker-line"></span></div>
+        <h1 id="hero-title">หนึ่งภาค<br>หนึ่งจังหวัด<br><em>ไม่ไปไม่รู้</em></h1>
+        <p class="hero-copy">จากสายหมอกบนดอยสู่สีครามของทะเล — ออกไปรู้จักเมืองไทยผ่าน 6 จุดหมายที่มีเรื่องเล่าเป็นของตัวเอง</p>
+        <div class="hero-actions">
+          <a href="#discover" class="button button-light">สำรวจทั้ง 6 ภาค <span aria-hidden="true">↗</span></a>
+          <span class="hero-note">เลื่อนลงเพื่อเริ่มการเดินทาง</span>
+        </div>
+      </div>
+      <div class="hero-bottom page-wrap"><span>DOI SAMER DAO · NAN</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track">6 REGIONS <span>✳</span> 6 STORIES <span>✳</span> ONE AMAZING THAILAND <span>✳</span> 6 REGIONS <span>✳</span> 6 STORIES <span>✳</span> ONE AMAZING THAILAND <span>✳</span></div></div>
+
+    <section class="intro-section page-wrap" id="discover" aria-labelledby="discover-title">
+      <div class="section-meta"><span>01 / THE DESTINATIONS</span><span>เลือกจุดหมายที่อยากรู้จัก</span></div>
+      <div class="intro-heading">
+        <div><p class="eyebrow">ประเทศไทยมีอะไรมากกว่าที่คิด</p><h2 id="discover-title">หกภาค <em>หกความรู้สึก</em></h2></div>
+        <p>ภูเขา ศิลปะ อาหาร ชุมชน ประวัติศาสตร์ และทะเล แต่ละจังหวัดคืออีกบทหนึ่งของการเดินทาง เลือกการ์ดเพื่อเปิดเรื่องราวของเมืองนั้น</p>
+      </div>
+      <div class="destination-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="destination-grid" aria-label="เลือกจังหวัดจาก 6 ภาค"></div>
+    </section>
+
+    <section class="feature-section" id="journey" aria-labelledby="feature-heading">
+      <div class="page-wrap">
+        <div class="section-meta section-meta-dark"><span>02 / FIELD NOTES</span><span id="feature-counter">01 — 06</span></div>
+        <div class="feature-topline"><p class="eyebrow">เปิดสมุดบันทึกการเดินทาง</p><div class="feature-controls"><button type="button" id="previous-button" aria-label="จังหวัดก่อนหน้า">←</button><button type="button" id="next-button" aria-label="จังหวัดถัดไป">→</button></div></div>
+        <div class="feature-main">
+          <div class="feature-visual"><img id="feature-image" src="assets/nan.jpg" alt="ภาพถ่ายดอยเสมอดาว จังหวัดน่าน" width="1600" height="900"><span id="feature-image-label">NORTH / NAN</span></div>
+          <div class="feature-story" aria-live="polite">
+            <div class="province-badge"><span id="feature-region">ภาคเหนือ</span><span class="badge-dot"></span><span id="feature-en">NAN</span></div>
+            <h2 id="feature-heading">น่าน</h2>
+            <p class="feature-tagline" id="feature-tagline">เมืองเล็กที่ทำให้เราอยากเดินทางช้าลง</p>
+            <p class="feature-description" id="feature-description"></p>
+            <div class="feature-facts"><div><small>เสน่ห์ของเมือง</small><strong id="feature-mood"></strong></div><div><small>เหมาะกับ</small><strong id="feature-for"></strong></div></div>
+            <a class="source-link" id="feature-source" href="https://www.tourismthailand.org/Destinations/Provinces/Nan/108" target="_blank" rel="noopener noreferrer">ดูข้อมูลจังหวัดจาก ททท. <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="feature-details">
+          <article class="detail-column"><div class="detail-icon" aria-hidden="true">↗</div><p class="detail-label">01 / EXPLORE</p><h3>เที่ยวไหนดี</h3><div id="feature-places"></div></article>
+          <article class="detail-column"><div class="detail-icon" aria-hidden="true">✳</div><p class="detail-label">02 / TASTE</p><h3>กินอะไรดี</h3><div id="feature-food"></div></article>
+          <article class="detail-column"><div class="detail-icon" aria-hidden="true">⌂</div><p class="detail-label">03 / STAY</p><h3>พักแบบไหนดี</h3><div id="feature-stays"></div></article>
+        </div>
+        <div class="route-strip"><div><span class="route-icon" aria-hidden="true">◷</span><div><small>ONE DAY IDEA</small><p id="feature-route"></p></div></div><span class="route-tip" id="feature-tip"></span></div>
+      </div>
+    </section>
+
+    <section class="closing-section page-wrap" id="about" aria-labelledby="closing-title">
+      <div class="closing-emblem" aria-hidden="true">✳</div>
+      <p class="eyebrow">YOUR NEXT STORY STARTS HERE</p>
+      <h2 id="closing-title">เมืองไทยไม่ได้มีแค่<br><em>ที่ที่เราเคยไป</em></h2>
+      <p>บางครั้งความทรงจำที่ดีที่สุด เริ่มจากการลองเลือกจังหวัดที่ยังไม่เคยรู้จัก</p>
+      <a href="#discover" class="button button-dark">เลือกจุดหมายอีกครั้ง <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-wrap footer-inner"><div><span class="footer-logo">✳ AMAZING THAILAND</span><p>1 ภาค 1 จังหวัด ไม่ไปไม่รู้</p></div><div class="footer-note"><p>เว็บไซต์ตัวอย่างเพื่อการศึกษา · ภาพถ่ายสถานที่จริงจาก Wikimedia Commons</p><p>ข้อมูลแหล่งท่องเที่ยวอ้างอิงการท่องเที่ยวแห่งประเทศไทย<br>ควรตรวจเวลาเปิดบริการและสภาพอากาศก่อนเดินทาง</p></div><a href="#top" class="back-top" aria-label="กลับขึ้นด้านบน">↑</a></div>
+    <details class="photo-credits page-wrap"><summary>เครดิตภาพถ่ายและสัญญาอนุญาต <span aria-hidden="true">↗</span></summary><div class="credit-grid grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1">
+      <p>ภาพปก: <a href="https://commons.wikimedia.org/wiki/File:Morning_sea_of_mist,_Doi_Samer_Dao,_Si_Nan,_Nan,_Thailand.jpg" target="_blank" rel="noopener noreferrer">Kris4to / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+      <p>น่าน: <a href="https://commons.wikimedia.org/wiki/File:Doi_Samer_Dao.jpg" target="_blank" rel="noopener noreferrer">Chalerm Achamana / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+      <p>อุบลราชธานี: <a href="https://commons.wikimedia.org/wiki/File:Candle_Festival_in_Ubon_Ratchathani.jpg" target="_blank" rel="noopener noreferrer">Warmbloodydew / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+      <p>อยุธยา: <a href="https://commons.wikimedia.org/wiki/File:Wat_Chai_Watthanaram_-_Ayutthaya.jpg" target="_blank" rel="noopener noreferrer">JJ Harrison / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></p>
+      <p>จันทบุรี: <a href="https://commons.wikimedia.org/wiki/File:Chanthabun_Waterfront.jpg" target="_blank" rel="noopener noreferrer">Narongchaiv / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+      <p>กาญจนบุรี: <a href="https://commons.wikimedia.org/wiki/File:Erawan_Waterfall.jpg" target="_blank" rel="noopener noreferrer">Kanchanaphum Jantrathip / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+      <p>กระบี่: <a href="https://commons.wikimedia.org/wiki/File:Postcard_image_of_blue_water_Krabi_Railay_Beach_Thailand.jpg" target="_blank" rel="noopener noreferrer">Wokshots / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+    </div><p class="credit-note">ภาพแสดงในเว็บด้วยการย่อขนาดและครอบภาพตามสัดส่วนของหน้าจอ</p></details>
+  </footer>
+</body>
+</html>
